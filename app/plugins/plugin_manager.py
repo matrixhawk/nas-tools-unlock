@@ -227,9 +227,9 @@ class PluginManager:
             # 基本属性
             conf = {}
             # 权限
-            if hasattr(plugin, "auth_level") \
-                    and plugin.auth_level > auth_level:
-                continue
+            # if hasattr(plugin, "auth_level") \
+            #         and plugin.auth_level > auth_level:
+            #     continue
             # 名称
             if hasattr(plugin, "module_name"):
                 conf.update({"name": plugin.module_name})
@@ -274,9 +274,9 @@ class PluginManager:
             # 基本属性
             conf = {}
             # 权限
-            if hasattr(plugin, "auth_level") \
-                    and plugin.auth_level > auth_level:
-                continue
+            # if hasattr(plugin, "auth_level") \
+            #         and plugin.auth_level > auth_level:
+            #     continue
             # ID
             conf.update({"id": pid})
             # 安装状态
